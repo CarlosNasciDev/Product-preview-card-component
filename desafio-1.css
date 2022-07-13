@@ -37,71 +37,95 @@ body {
     align-items: center;
 }
 
+main{
+    display:flex; 
+    background-color:hsl(26, 38%, 91%);
+    margin: auto;
+    max-width: 100%;
+    min-width: 375px;
+    padding: 30px;
+}
+
 .card{
     display: flex;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.151); 
     width: 600px;
     min-width: 375px;
     height: 400px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.151); 
-
 }
 
-img{
-    width: 300px;
-    height: 400px;
+ .card-img{
+    
+    height: 100%;
     border-radius: 10px 0px 0px 10px;
 }
 
-
-
-p{
-    padding: 8px;
+.card-body{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
 }
 
-.riscado {
-    text-decoration: line-through;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    color: hsl(228, 12%, 48%);
+p, h1{
+    padding: 7px;
+    text-align: left;
 }
 
-.botao{
-  color: white;
-  text-decoration: none;
-  font-size: 1.4em;
-  padding: 1.2rem;
-  border-radius: 6px;
-  text-align: center;
-  background-color: hsl(158, 36%, 37%);
-  display: ;
+@media  screen and (max-width: 630px) {
+    .card {
+        flex-direction: column;
+        height: 100vh;    
+    }
+
+    .card-img{
+        border-radius: 10px 10px 0px 0px;  
+        height: 50vh;
+        width: 100%;
+    }
 }
 
-.botao:link img {
-    height: 1.3rem;
-    width: 1.3rem;
-  }
-  
-  .botao:hover,
-  .botao:active {
-    background-color: #1e4034;
-  }
-
-.titulo-produto{
+.card-title{
     font-family: 'Fraunces', serif;
     font-size: 2.7em;
     color: hsl(212, 21%, 14%);
+    text-align: left;
 }
 
-.preco{
+.price{
     font-family: 'Fraunces', serif;
     font-size: 2.7em;
     color: hsl(157, 8%, 46%); 
 }
 
-div{
-  margin-left: 30px;
+.riscado {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 80px 10px 80px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+}
+  
+.btn:link img {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 7px;
+}
+    
+.btn:hover,
+.btn:active {
+    background-color: #1e4034;
 }
 
 .attribution { 
