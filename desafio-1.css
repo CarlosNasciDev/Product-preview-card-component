@@ -128,16 +128,18 @@ p, h1{
     background-color: #1e4034;
 }
 
-.attribution { 
-    font-size: 11px; 
+footer { 
+    background-color: hsl(26, 38%, 91%);
+    font-size: 14px; 
     text-align: center;
     position: fixed;
     bottom: 0px;
     width: 100%;
     margin: 0%;
+    
 }
     
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(158, 36%, 37%); 
     text-decoration: none;
 }
