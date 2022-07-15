@@ -42,7 +42,7 @@ main{
     background-color:hsl(26, 38%, 91%);
     margin: auto;
     max-width: 100%;
-    min-width: 375px;
+    min-width: 320px;
     padding: 30px;
 }
 
@@ -52,7 +52,7 @@ main{
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.151); 
     width: 600px;
-    min-width: 375px;
+    min-width: 320px;
     height: 400px;
 }
 
@@ -65,8 +65,7 @@ main{
 .card-body{
     margin: 5px;
     padding: 10px;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 p, h1{
