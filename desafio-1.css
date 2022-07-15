@@ -47,6 +47,7 @@ main{
 }
 
 .card{
+    position: relative;
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -56,14 +57,14 @@ main{
     height: 400px;
 }
 
- .card-img{
-    
+ .card-img{ 
     height: 100%;
     border-radius: 10px 0px 0px 10px;
 }
 
 .card-body{
-    margin: 5px;
+    position: absolute;
+    margin-left: 300px;
     padding: 10px;
     text-align: center;   
 }
@@ -73,8 +74,8 @@ p, h1{
     text-align: left;
 }
 
-@media  screen and (max-width: 630px) {
-    .card {
+@media  screen and (max-width: 654px) {
+    .card{
         flex-direction: column;
         height: 100vh;    
     }
@@ -83,6 +84,11 @@ p, h1{
         border-radius: 10px 10px 0px 0px;  
         height: 50vh;
         width: 100%;
+    }
+
+    .card-body{
+        position: relative;
+        margin: 0;
     }
 }
 
